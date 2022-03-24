@@ -11,8 +11,10 @@ L'output del prezzo finale va scritto in forma umana (con massimo due decimali, 
 const numero_km = parseInt(prompt("Quanti KM dovrai percorrere?"));
 console.log("Il numero dei KM da percorrere è: " + numero_km);
 
-if (isNaN(numero_km)) {
-    alert("Devi inserire un valore numerico");
+
+
+if (isNaN(numero_km) || numero_km <= 0) {
+    alert("Devi inserire un valore numerico maggiore o uguale a 1");
 }
 
 // Chiedi all'utente l'età 
@@ -20,8 +22,8 @@ if (isNaN(numero_km)) {
 const eta_utente = parseInt(prompt("Quanti anni hai?"));
 console.log("L'età dell'utente è: " + eta_utente);
 
-if (isNaN(eta_utente)) {
-    alert("Devi inserire un valore numerico");
+if (isNaN(eta_utente) || eta_utente <= 0 || eta_utente >= 101) {
+    alert("Devi inserire un valore numerico compreso tra 1 e 100");
 }
 
 //Calcoliamo il costo del biglietto al netto degli sconti
