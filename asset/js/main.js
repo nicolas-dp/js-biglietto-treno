@@ -35,9 +35,9 @@ console.log("Il prezzo totale senza sconti è: " + prezzo_totale + " €");
 //Calcoliamo il costo del biglietto applicando lo sconto
 
 if (eta_utente < 18) {
-    prezzo_sconto = (prezzo_totale - ((prezzo_totale * 20) / 100));
+    prezzo_sconto = prezzo_totale - (prezzo_totale * 0.2);
 } else if (eta_utente >= 65) {
-    prezzo_sconto = (prezzo_totale - ((prezzo_totale * 40) / 100));
+    prezzo_sconto = prezzo_totale - (prezzo_totale * 0.4);
 } else {
     prezzo_sconto = prezzo_totale;
 }
