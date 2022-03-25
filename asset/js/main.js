@@ -28,7 +28,7 @@ if (isNaN(eta_utente) || eta_utente <= 0 || eta_utente >= 101) {
 
 //Calcoliamo il costo del biglietto al netto degli sconti
 
-const prezzo_totale = numero_km * 0.20;
+const prezzo_totale = numero_km * 0.21;
 let prezzo_sconto;
 console.log("Il prezzo totale senza sconti è: " + prezzo_totale + " €");
 
